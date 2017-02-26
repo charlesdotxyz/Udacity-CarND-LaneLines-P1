@@ -45,7 +45,7 @@ My pipeline consisted of 6 steps.
 
 6. Modified the draw_lines() function in order to draw a single line on the left and right lanes. 
 
-  I first separated left and right lane by their slopes. For left and right groups , I did the following respectively:
+I first separated left and right lane by their slopes. For left and right groups , I did the following respectively:
 * Averaged all the slopes within the group, let's call it "Avg1"
 * Filtered out unwanted slopes by: iterated all the slopes again, but only kept track of slope within the window of Avg1 plus minus a threshold, which I set to 0.35 here.
 * Then searched for the longest line segment, extrapolated to the top and bottom using the average slope.
