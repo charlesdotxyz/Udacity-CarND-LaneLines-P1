@@ -26,7 +26,8 @@ The goals / steps of this project are the following:
 
 ###1. Pipeline Description
 
-My pipeline consisted of 6 steps. 
+My pipeline consisted of 6 steps.
+
 Here is the original image:
 ![alt text][image0]
 
