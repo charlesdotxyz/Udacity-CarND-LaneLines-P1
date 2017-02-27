@@ -10,7 +10,7 @@ The goals / steps of this project are the following:
 
 
 [//]: # (Image References)
-
+[image0]: ./report/solidYellowCurve.jpg "Original Image"
 [image1]: ./report/gray.jpg "Grayscale"
 [image2]: ./report/GaussianBlur.jpg "GaussianBlur"
 [image3]: ./report/canny.jpg "Canny Edge"
@@ -27,6 +27,8 @@ The goals / steps of this project are the following:
 ###1. Pipeline Description
 
 My pipeline consisted of 6 steps. 
+Here is the original image:
+![alt text][image0]
 
 1. I converted the images to grayscale
 ![alt text][image1]
@@ -45,7 +47,7 @@ My pipeline consisted of 6 steps.
 
 6. Modified the draw_lines() function in order to draw a single line on the left and right lanes. 
 
-I first separated left and right lane by their slopes. For left and right groups , I did the following respectively:
+  I first separated left and right lane by their slopes. For left and right groups , I did the following respectively:
 * Averaged all the slopes within the group, let's call it "Avg1"
 * Filtered out unwanted slopes by: iterated all the slopes again, but only kept track of slope within the window of Avg1 plus minus a threshold, which I set to 0.35 here.
 * Then searched for the longest line segment, extrapolated to the top and bottom using the average slope.
